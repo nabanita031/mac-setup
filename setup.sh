@@ -84,11 +84,8 @@ brew install openssl@1.1
 # Install Ruby 3.1.3
 echo "Installing Ruby 3.1.3..."
 rvm install 3.1.3 --with-openssl-dir=$(brew --prefix openssl@1.1)
-ruby -v
 
-# Set Ruby 3.1.3 as default
-echo "Setting Ruby 3.1.3 as default..."
-rvm use 3.1.3 --default
+rvm use
 
 # Verify Installation
 echo "Verifying Installation..."
